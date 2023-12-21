@@ -41,7 +41,8 @@ nav {
     background-repeat: repeat-x;
     border-bottom: 0.3rem solid #6d2718;
 
-    animation: backgroundMove 400s linear infinite;
+    animation: backgroundMove 400s linear infinite,
+                blurLeftRight 30s ease-in-out infinite;
     /* animation: backgroundLeftRight 30s ease-in-out infinite; */
 }
 
@@ -52,7 +53,6 @@ nav {
     height: 100vh;
     filter: drop-shadow(0px 0px 16px white) hue-rotate(45deg);
     animation: hueRotateLeftRight 20s ease-in-out infinite;
-
 }
 
 .floor {
@@ -62,8 +62,18 @@ nav {
 
 
 
-@keyframes hueRotateLeftRight {
+@keyframes blurLeftRight {
+    0%,
+    100% {
+        filter: blur(0px);
+    }
 
+    50% {
+        filter: blur(3px);
+    }
+}
+
+@keyframes hueRotateLeftRight {
     0%,
     100% {
         filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.635)) hue-rotate(-20deg);
