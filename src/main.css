@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     /* background: rgb(40, 40, 40); */
+    min-height: 100vh;
+    background: #205620;
 }
 
 header {
@@ -12,7 +14,23 @@ header {
 
 nav {
     background: #202834;
-    min-height: 5rem;
+    /* min-height: 5rem; */
+}
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    display: flex;
+    align-items: start;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.logo b {
+    font-size: 1rem;
+    margin: .5rem 0 0 .5rem ;
+    opacity: .7;
 }
 
 .screen {
@@ -36,6 +54,7 @@ nav {
     animation: hueRotateLeftRight 20s ease-in-out infinite;
 
 }
+
 .floor {
     height: 15vh;
     width: 100%;
@@ -44,26 +63,57 @@ nav {
 
 
 @keyframes hueRotateLeftRight {
-    0%, 100% { filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.635)) hue-rotate(-15deg); }
-    50% { filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.348)) hue-rotate(15deg); }
+
+    0%,
+    100% {
+        filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.635)) hue-rotate(-20deg);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.348)) hue-rotate(5deg);
+    }
 }
 
 @keyframes horizontalMove {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes leftRightMove {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes backgroundMove {
-    from { background-position: 0 0; }
-    to { background-position: -100% 0; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
 }
 
 @keyframes backgroundLeftRight {
-    0%, 100% { background-position: 0 0; }
-    50% { background-position: 5rem 0; }
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 5rem 0;
+    }
 }
