@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {}
+
+nav {
+    background: burlywood;
+    min-height: 5rem;
+}
+
+.screen {
+    min-height: 70vh;
+    background: beige;
+    background-image: url("/src/img/top.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
