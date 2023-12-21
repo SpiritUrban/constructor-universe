@@ -3,7 +3,10 @@ body {
     margin: 0;
 }
 
-header {}
+header {
+    position: relative;
+    background: brown;
+}
 
 nav {
     background: burlywood;
@@ -16,4 +19,32 @@ nav {
     background-image: url("/src/img/top.png");
     background-size: contain;
     background-repeat: repeat-x;
+    animation: backgroundMove 20s linear infinite;
+    animation: backgroundLeftRight 20s ease-in-out infinite;
+}
+
+.robot-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes horizontalMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes leftRightMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+@keyframes backgroundMove {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+}
+
+@keyframes backgroundLeftRight {
+    0%, 100% { background-position: 0 0; }
+    50% { background-position: 5rem 0; }
 }
