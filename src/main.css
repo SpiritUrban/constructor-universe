@@ -1,15 +1,17 @@
 body {
     padding: 0;
     margin: 0;
+    /* background: rgb(40, 40, 40); */
 }
 
 header {
     position: relative;
-    background: brown;
+    border-bottom: 0.1rem solid #7b7b7b;
+
 }
 
 nav {
-    background: burlywood;
+    background: #202834;
     min-height: 5rem;
 }
 
@@ -19,14 +21,31 @@ nav {
     background-image: url("/src/img/top.png");
     background-size: contain;
     background-repeat: repeat-x;
-    animation: backgroundMove 20s linear infinite;
-    animation: backgroundLeftRight 20s ease-in-out infinite;
+    border-bottom: 0.3rem solid #6d2718;
+
+    animation: backgroundMove 400s linear infinite;
+    /* animation: backgroundLeftRight 30s ease-in-out infinite; */
 }
 
 .robot-1 {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: -5%;
+    right: 0rem;
+    height: 100vh;
+    filter: drop-shadow(0px 0px 16px white) hue-rotate(45deg);
+    animation: hueRotateLeftRight 20s ease-in-out infinite;
+
+}
+.floor {
+    height: 15vh;
+    width: 100%;
+}
+
+
+
+@keyframes hueRotateLeftRight {
+    0%, 100% { filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.635)) hue-rotate(-15deg); }
+    50% { filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.348)) hue-rotate(15deg); }
 }
 
 @keyframes horizontalMove {
