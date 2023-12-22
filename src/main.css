@@ -3,7 +3,7 @@ body {
     margin: 0;
     /* background: rgb(40, 40, 40); */
     min-height: 100vh;
-    background: #205620;
+    background: #13211a;
 }
 
 header {
@@ -29,7 +29,7 @@ nav {
 
 .logo b {
     font-size: 1rem;
-    margin: .5rem 0 0 .5rem ;
+    margin: .5rem 0 0 .5rem;
     opacity: .7;
 }
 
@@ -42,7 +42,7 @@ nav {
     border-bottom: 0.3rem solid #6d2718;
 
     animation: backgroundMove 400s linear infinite,
-                blurLeftRight 30s ease-in-out infinite;
+        blurLeftRight 30s ease-in-out infinite;
     /* animation: backgroundLeftRight 30s ease-in-out infinite; */
 }
 
@@ -63,6 +63,7 @@ nav {
 
 
 @keyframes blurLeftRight {
+
     0%,
     100% {
         filter: blur(0px);
@@ -74,6 +75,7 @@ nav {
 }
 
 @keyframes hueRotateLeftRight {
+
     0%,
     100% {
         filter: drop-shadow(0px 0px 16px rgba(255, 255, 255, 0.635)) hue-rotate(-20deg);
@@ -126,4 +128,36 @@ nav {
     50% {
         background-position: 5rem 0;
     }
+}
+
+
+.el {
+    width: 50vw;
+    height: 140vh;
+    /* padding: 1rem; */
+
+    background-image: url(/src/img/con-1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url(/src/img/mask-br.svg);
+    mask-size: 100vmin;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    margin-top: -10rem;
+}
+
+main {
+    z-index: 2;
+    position: relative;
+}
+
+.il {
+    margin-top: -13rem;
+    margin-left: 5rem;
+    width: 40%;
+    filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.5));
+
 }
