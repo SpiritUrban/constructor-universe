@@ -40,7 +40,7 @@ nav {
 .screen {
     min-height: 70vh;
     background: beige;
-    background-image: url("/src/img/top.png");
+    background-image: url("./src/img/top.png");
     background-size: contain;
     background-repeat: repeat-x;
     border-bottom: 0.3rem solid #6d2718;
@@ -140,12 +140,12 @@ nav {
     height: 140vh;
     /* padding: 1rem; */
 
-    background-image: url(/src/img/con-1.jpg);
+    background-image: url(./src/img/con-1.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
-    mask-image: url(/src/img/mask-br.svg);
+    mask-image: url(./src/img/mask-br.svg);
     mask-size: 100vmin;
     mask-repeat: no-repeat;
     mask-position: center;
