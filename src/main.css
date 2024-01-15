@@ -182,3 +182,26 @@ section h2 {
 
 section p {
 }
+
+section.s2 {
+
+}
+
+section.s2 img{
+    width: 20%;
+    margin:0;
+    transition: .3s;
+}
+
+section.s2 img:hover{
+    transform: scale(2);
+    z-index: 100;
+}
+
+section.s2 img:nth-child(1):hover{
+    transform: scale(2) translate( 20%,0);
+}
+
+section.s2 img:nth-child(5):hover{
+    transform: scale(2) translate( -20%,0);
+}
